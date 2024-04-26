@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form with Html and Css</title>
+    <link rel="shortcut icon" href="./Img/completed-task.png" type="image/x-icon">
+    <!-- CSS and Font Poppins-->
+    <link rel="stylesheet" href="Css/Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <main>
+        <!-- Header -->
+        <header>
+            <h1 id="title">Survey Form about Programming.</h1>
+            <p id="description">
+                Fill out the corresponding information
+            </p>
+        </header>
+        <!-- Formulario -->
+        <form action="" id="Survey-Form" method="post">
+            <fieldset>
+                <label for="name">Name</label>
+                <input type="text" class="campo-profile" id="name" placeholder="Introduce your name" required>
+            </fieldset>
+            <fieldset>
+                <label for="email">Email</label>
+                <input type="email" class="campo-profile" id="email" placeholder="Introduce your email" required>
+            </fieldset>
+            <fieldset>
+                <label for="number">Age</label>
+                <input type="number" class="campo-profile" id="number" placeholder="Introduce your Age" min=2
+                    max=120 required>
+            </fieldset>
+            <label for="dropdown">What is your favorite Programming language?</label>
+            <select name="dropdown" class="campo-select" id="dropdown" required>
+                <option value="Default">Default</option>
+                <option value="Python">Python</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="C++">C++</option>
+                <option value="C#">C#</option>
+                <option value="Rust">Rust</option>
+            </select>
+            </fieldset>
+            <fieldset>
+                <p>
+                    Choose a computer science profession
+                </p>
+                <label for=""><input class="input-radio" name="profession" type="radio" value="front-end"> Front-end</label>
+                <label for=""><input class="input-radio" name="profession" type="radio" value="vack-end">Back-end</label>
+                <label for=""><input class="input-radio" name="profession" type="radio" value="full-stack">Full-Stack</label>
+            </fieldset>
+            <fieldset>
+                <p>
+                    What projects do you recommend coding?
+                </p>
+                <label for=""><input class="input-box" type="checkbox" value="todo-list">Todo List</label>
+                <label for=""><input class="input-box" type="checkbox" value="pomodoro">Pomodoro</label>
+                <label for=""><input class="input-box" type="checkbox" value="tygame">Typing Game</label>
+            </fieldset>
+            <!-- Campo TextArea -->
+            <fieldset>
+                <p>
+                    What did you think of the survey?
+                </p>
+                <textarea name="" id="" class="campo-textarea" cols="30" rows="10"></textarea>
+            </fieldset>
+            <!-- Button -->
+            <button type="submit" class="btn"><a href="Enlace.html">Send</a></button>
+        </form>
+    </main>
+</body>
+</html>
